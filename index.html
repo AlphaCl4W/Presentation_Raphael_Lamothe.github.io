@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href = "testindex.html" class="logo">Raphaël Lamothe</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="testindex.html">Accueil</a></li>
+                <li><a href="Presentation.html">Présentation</a></li>
+                <li><a href="CV.html">CV</a></li>
+            </ul>
+        </div>
+        <img src="https://static.thenounproject.com/png/356889-200.png" alt="Menu" class="menu">
+    </nav> 
+    <header></header>
+
+</body>
+<script>
+        const menu = document.querySelector(".menu")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menu.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
+</html>
